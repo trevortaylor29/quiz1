@@ -33,7 +33,6 @@ csvfile = csv.reader(infile, delimiter=',')
 # create an output file
 outfile = open("marketinglistFINAL.csv", 'w')
 
-
 next(csvfile)
 # create an empty dictionary
 dict = {}
@@ -50,6 +49,9 @@ print(dict)
 # iternate through the dictionary and write to the output file
 
 outfile.write(str(dict))
+#for i in dict.keys():
+  #  print(i)
+
 
 
 # close your output file
